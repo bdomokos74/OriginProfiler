@@ -1,0 +1,5 @@
+.Rapp.history
+.DS_Store
+data/chromFa.zip
+.idea/
+*.iml
