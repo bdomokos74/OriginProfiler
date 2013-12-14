@@ -14,8 +14,8 @@ source("src/plot_profile.R")
 
 Results:
 
-[Aggregated skew](https://github.com/bdomokos74/OriginProfiler)
+![Aggregated skew](https://github.com/bdomokos74/OriginProfiler/raw/master/results/profile_skew.png)
 
-[Aggregated profile](https://github.com/bdomokos74/OriginProfiler)
+![Aggregated profile](https://github.com/bdomokos74/OriginProfiler/raw/master/results/prf_aggr.png)
 
-[A specific profile](https://github.com/bdomokos74/OriginProfiler)
+![A specific profile](https://github.com/bdomokos74/OriginProfiler/raw/master/results/prf1.png)

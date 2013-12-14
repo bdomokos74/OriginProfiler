@@ -14,7 +14,7 @@ plot.prf <- function(id, data) {
     return(p)
 }
 p <- plot.prf(acs_ids[1], data); p
-ggsave(file="results/prf1.pdf")
+ggsave(file="results/prf1.png")
 
 # aggregate
 library(plyr)
@@ -30,7 +30,7 @@ plot.aggr <- function(data) {
 }
 res<-plot.aggr(data)
 res[["plot"]]
-ggsave(file="results/prf_aggr.pdf")
+ggsave(file="results/prf_aggr.png")
 
 prf.aggr <- res[["aggr"]]
 skew <- ddply(prf.aggr, .(sample_num), function(df) data.frame(
@@ -41,4 +41,4 @@ skew <- ddply(prf.aggr, .(sample_num), function(df) data.frame(
 skew.m <- melt(skew, id="sample_num")
 skew.plot <- ggplot(skew.m, aes(sample_num, value))+geom_line(aes(group=variable, color=variable))
 skew.plot
-ggsave(file="results/profile_skew.pdf")
+ggsave(file="results/profile_skew.png")
